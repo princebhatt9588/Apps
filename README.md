@@ -1,56 +1,39 @@
 **NOT MAINTAINED ANYMORE**
 
-# Covid 19 India Flutter app
+# Covid 19 India Flutter App**
 
-Inspired by https://www.covid19india.org/ which is an [open source](https://github.com/covid19india/covid19india-react) React App.
+This Flutter application, focused on Covid-19 in India, is no longer actively maintained.
 
-### Contributions Welcome
+**Inspiration from Covid19India.org:**
+The idea for this app was inspired by the [Covid19India.org](https://www.covid19india.org/) website, which is an open-source React application available on GitHub ([covid19india/covid19india-react](https://github.com/covid19india/covid19india-react)). 
 
-If you would like to contribute, please first discuss with me (either as comments on existing issues, or by opening a new issue).
+**Contributions Welcome:**
+While the project is no longer under active development, contributions from interested developers are still welcome. If you would like to contribute, feel free to initiate a discussion by commenting on existing issues or by opening new ones.
 
-Take a look at [`docs`](docs/) folder for more detailed technical information including Architecture, libraries used, SVG Maps generation and more.
+**Technical Documentation:**
+For those interested in the technical aspects of the app, you can find detailed technical information, including architecture, libraries used, SVG map generation, and more, in the [`docs`](docs/) folder.
 
-## Screenshots
+**Screenshots:**
+A recorded GIF showcasing the home screen is available above. However, please note that the GIF quality might not be the best. For a higher quality recording in WEBM format on YouTube, you can watch it [here](https://youtu.be/h3p9_ntxgd4).
 
-Here's a gif recording of the home screen. As usual, the quality of the GIF is not really great. [Click here](https://youtu.be/h3p9_ntxgd4) for a better quality WEBM recording on YouTube.
-
-![Home Screen](screenshots/covid19india-flutter.gif)
-
-
-## Running
-
+**Running the App:**
+To run the app, execute the following command:
 ```bash
 flutter packages pub run build_runner build
 ```
-
-If this command fails, first do
-
+If this command fails, make sure to run:
 ```bash
 flutter packages pub upgrade
 ```
 
-## Downloading
+**Downloading the App:**
+The app is not intended to be published on any app stores. However, the possibility of providing downloadable APKs in the future is under consideration.
 
-I do not intend to publish this app on any of the stores. I do hope to provide downloadable APKs in the future though.
+**Credits:**
+The app draws inspiration, design elements, and data (backend API) from the [Covid19India.org](https://www.covid19india.org/) website. The website's source code, built with React, and the TopoJSON-format maps of India are valuable contributions to this project.
 
-## Credits
+Additionally, the GraphQL wrapper around the covid19india API from [covidstat.info](https://covidstat.info/graphql) provides a more convenient API for this Flutter app.
 
-### [Covid19India website](https://www.covid19india.org/)
+Special thanks to the [Flutter Clickable Regions GitHub Repository](https://github.com/gi097/flutter_clickable_regions) for demonstrating how to implement clickable SVG regions in Flutter, allowing the app to convert TopoJSON data to SVG.
 
-  - Inspiration 
-  - Design
-  - Data (backend API)
-  - Source code of the Web App (React)
-  - Maps of India (TopoJSON format)
-
-### [covidstat.info GraphQL](https://covidstat.info/graphql)
-
-This is a GraphQL wrapper around the covid19india API. It provides a more convenient API for this app
-
-### [Flutter clickable regions Github Repo](https://github.com/gi097/flutter_clickable_regions)
-
-The original React app uses TopoJSON but the only client library available for it is d3.js. The `flutter_clickable_regions` repo shows how to have clickable SVG regions in Flutter. This app uses converts the topojson to SVG using the approach outlined in `flutter_clickable_regions`. 
-
-### [FlatIcon](https://www.flaticon.com/free-icon/virus_2659970)
-
-The app icon is based on an SVG icon that I downloaded for free. Made by Freepik from www.flaticon.com"
+The app icon, depicting a virus, is based on an SVG icon freely downloaded from [FlatIcon](https://www.flaticon.com/free-icon/virus_2659970). Credit for this icon design goes to Freepik from www.flaticon.com.
